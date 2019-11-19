@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    </head>
+    <h1>Welcome to the DataAgora Coding Challenge!</h1>
+    <form action="{{ url_for('challenge') }}", method="post">
+        <div>
+            <ul class="form-style-1">
+                <li>
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" name="name" class="field-long" value="Neelesh Dodda" required/> 
+                </li>
+                <br>
+                <li>
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="field-long" value="ndodda@berkeley.edu" required/>
+                </li>
+                <br>
+                <li>
+                    <label>Github Username<span class="required">*</span></label>
+                    <input type="text" name="github_username" class="field-long" value="neeleshdodda44" required/>
+                </li>
+                <br>
+                <li>
+                    <label>UUID<span class="required">*</span></label>
+                    <input type="text" name="uuid" class="field-long" value="0f0ea682-293d-470b-9981-6f06f017bec5" required/>
+                </li>
+                <br>
+                <li>
+                    <input type="submit" value="Start coding challenge!" />
+                </li>
+            </ul>
+        </div>
+        
+    </form>
+</body>
+</html>
